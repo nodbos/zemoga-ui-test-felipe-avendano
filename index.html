@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rule of Thumb</title>
+      <!-- Icons -->
+      <link rel="icon" type="image/png" href="./assets/ico/neva-logo.ico" />
+      <!-- Library -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+         crossorigin="anonymous"
+      />
+      <!-- Css -->
+      <link rel="stylesheet" href="./assets/scss/style.css" />
+   </head>
+   <body>
+      <header id="header">
+         <!-- Mobile Menu -->
+         <nav id="menu-mobile" class="menu-mobile">
+            <ul class="menu-mobile__links">
+               <li class="menu-mobile__list">
+                  <a id="menu-x__btn" class="menu-x__btn menu__link">
+                     <i class="fas fa-times fa-2x"></i>
+                  </a>
+               </li>
+               <li class="menu-mobile__list">
+                  <a class="menu__link" href="./pages/past-trials.html"> Past Trials </a>
+               </li>
+               <li class="menu-mobile__list">
+                  <a class="menu__link" href="./pages/how-it-works.html"> How it Works </a>
+               </li>
+               <li class="menu-mobile__list">
+                  <a class="menu__link" href="./pages/log-in.html"> Log In / Sign Up </a>
+               </li>
+               <li class="menu-mobile__list">
+                  <a class="menu__link" href="https://www.google.com">
+                     <i class="fas fa-search fa-2x"></i>
+                  </a>
+               </li>
+               <li class="menu-mobile__list">
+                  <a id="menu-x__btn" class="menu-x__btn menu__link">
+                     <i class="fas fa-times fa-2x"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Menu -->
+         <!-- Desktop Menu -->
+         <nav id="menu-desktop" class="menu-desktop">
+            <div class="menu-desktop__logo">
+               <h1><a href="#">Rule of Thumb.</a></h1>
+            </div>
+            <div class="menu-desktop__links">
+               <a class="menu-desktop__link" href="./pages/past-trials.html"> Past Trials </a>
+               <a class="menu-desktop__link" href="./pages/how-it-works.html"> How it Works </a>
+               <a class="menu-desktop__link" href="./pages/log-in.html"> Log In / Sign Up </a>
+               <a class="menu-desktop__link" href="https://www.google.com">
+                  <i class="fas fa-search fa-2x"></i>
+               </a>
+            </div>
+            <!-- Mobile Button -->
+            <button class="menu-mobile__btn">
+               <a id="menu-mobile__btn" class="fa fa-bars fa-2x"></a>
+            </button>
+         </nav>
+         <!-- Headline -->
+         <div class="headlines">
+            <article class="headline">
+               <section class="headline__content">
+                  <p class="headline__copy--small">What's your opinion on</p>
+                  <h2 class="headline__title">Pope Francis?</h2>
+                  <p class="headline__copy">
+                     He’s talking tough on clergy sexual abuse, but is he just another papal pervert
+                     protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
+                  </p>
+                  <div class="headline__more">
+                     <i class="fab fa-wikipedia-w fa-1x"></i>
+                     <a class="headline__link" href="https://www.wikipedia.org/"
+                        >More information</a
+                     >
+                  </div>
+                  <h2 class="headline__subtitle">What's Your Verdict?</h2>
+               </section>
+               <section id="headline__votes" class="headline__votes">
+                  <div class="headline__icon like">
+                     <i class="fas fa-thumbs-up fa-1x"></i>
+                  </div>
+                  <div class="headline__icon dislike">
+                     <i class="fas fa-thumbs-down fa-1x"></i>
+                  </div>
+               </section>
+            </article>
+         </div>
+         <!-- Timer -->
+         <article class="timer">
+            <section class="timer__copy">
+               <p>Closing In</p>
+            </section>
+            <section class="timer__number">
+               <p><b>22</b> days</p>
+            </section>
+         </article>
+      </header>
+      <main id="main" role="main">
+         <!-- Loader -->
+         <section id="loader" class="loader">
+            <img src="./assets/img/loader.svg" alt="loader" />
+         </section>
+         <!-- Modal -->
+         <section id="modal" class="overlay">
+            <article id="modal__content">
+               <section class="modal__btn" style="text-align: right">
+                  <a id="modal__close" href="#">
+                     <i class="fas fa-times fa-2x"></i>
+                  </a>
+               </section>
+               <section class="modal__copy">
+                  <p>Thank You for Voting!</p>
+               </section>
+            </article>
+         </section>
+         <!-- Advice -->
+         <article id="advice" class="advice">
+            <section class="advice__phrase">
+               <p>
+                  Speak out. Be heard. <br />
+                  <b>Be counted</b>
+               </p>
+            </section>
+            <section class="advice__copy">
+               <p>
+                  Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone
+                  can speak out and speak freely. It’s easy: You share your opinion, we analyze and
+                  put the data in a public report.
+               </p>
+            </section>
+            <button id="advice__close" class="advice__close">
+               <i class="fas fa-times fa-2x"></i>
+            </button>
+         </article>
+         <!-- Votes -->
+         <article id="votes" class="votes">
+            <h2 class="votes__title">Votes</h2>
+            <section id="votes-container" class="votes-container"></section>
+         </article>
+         <!-- Add -->
+         <article class="add">
+            <section class="add__copy">
+               <p>Is there anyone else you would want us to add?</p>
+            </section>
+            <button id="add__btn" class="add__btn btn btn--black btn--big">
+               <p>Submit a Name</p>
+            </button>
+         </article>
+      </main>
+      <footer id="footer">
+         <nav class="footer__links">
+            <a href="./pages/terms-conditions.html"> Terms and Conditions </a>
+            <a href="./pages/privacy-policy.html"> Privacy Policy </a>
+            <a href="./pages/contact-us.html"> Contact Us </a>
+         </nav>
+         <nav class="footer__social">
+            <p>Follow Us</p>
+            <div class="footer__media">
+               <a href="https://www.facebook.com">
+                  <i class="fab fa-facebook-square fa-2x"></i>
+               </a>
+               <a href="https://www.twitter.com">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+               </a>
+            </div>
+         </nav>
+      </footer>
+      <!-- Scripts -->
+      <script type="module" src="./assets/js/main.js" defer></script>
+   </body>
+</html>

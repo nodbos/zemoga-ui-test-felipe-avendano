@@ -1,0 +1,13 @@
+/*-------------------- Media Query ---------------------*/
+/*------------------ Mobile to Tablet ------------------*/
+@mixin mobile {
+   @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+      @content;
+   }
+}
+/*------------------ Tablet to Desktop ------------------*/
+@mixin tablet {
+   @media (min-width: #{$breakpoint-tablet}) {
+      @content;
+   }
+}

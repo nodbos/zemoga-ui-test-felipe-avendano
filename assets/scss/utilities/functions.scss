@@ -1,0 +1,8 @@
+/*-------------------- Functions ---------------------*/
+@mixin transition($property) {
+   -webkit-transition: $property $transition;
+   -moz-transition: $property $transition;
+   -ms-transition: $property $transition;
+   -o-transition: $property $transition;
+   transition: $property $transition;
+}

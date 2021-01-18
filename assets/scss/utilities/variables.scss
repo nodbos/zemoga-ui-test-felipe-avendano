@@ -1,0 +1,16 @@
+/*------------------------ Variables ------------------------*/
+$color-black: #121212;
+$color-white: #f0f0f0;
+$color-gray: #ebebeb;
+$color-primary: rgb(255, 173, 29);
+$color-secondary: rgb(28, 187, 180);
+$color-primary-opacity: rgba($color-primary, 0.8);
+$color-secondary-opacity: rgba($color-secondary, 0.8);
+$blur: blur(5rem) contrast(125%) brightness(75%);
+$font-family: 'Lato', sans-serif;
+$margin-lateral: 10vw;
+$base-space: 2rem;
+$transition: 0.5s ease;
+$shadow: 0.3rem 0.3rem 1rem 0 rgba(18, 18, 18, 0.2);
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;

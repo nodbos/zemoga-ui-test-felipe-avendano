@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import 'utilities/variables.scss';
+@import 'utilities/functions.scss';
+@import 'utilities/media-queries.scss';
+/*------------------------ Universal Reset ------------------------*/
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+   background: transparent;
+   box-sizing: border-box;
+}
+/*------------------------ General ------------------------*/
+html {
+   box-sizing: border-box;
+}
+body {
+   min-height: 100vh;
+   font-family: $font-family;
+   color: $color-white;
+   margin: 0;
+}
+header {
+   background: url(../img/headline-papa.png) center / cover no-repeat;
+   background: linear-gradient(to bottom, rgba(12, 12, 12, 0.8) 0%, rgba(12, 12, 12, 0) 30%),
+      url(../img/headline-papa.png) center / cover no-repeat;
+   padding: 0 10vw;
+   @include mobile {
+      background-size: cover;
+      background-position: center;
+      padding: 0 $margin-lateral/2;
+   }
+}
+h1,
+h2,
+h3,
+h4,
+p {
+   letter-spacing: 0.05rem;
+}
+p {
+   font-weight: 300;
+}
+button {
+   cursor: pointer;
+   outline: none;
+   font-family: $font-family;
+}
+@import 'sections/header.scss';
+@import 'sections/main.scss';
+@import 'sections/footer.scss';
+/*------------------------ Color ------------------------*/
+.like {
+   background-color: $color-secondary-opacity;
+   @include transition(background-color);
+   &:hover {
+      background-color: $color-secondary;
+      @include transition(background-color);
+   }
+}
+.dislike {
+   background-color: $color-primary-opacity;
+   @include transition(background-color);
+   &:hover {
+      background-color: $color-primary;
+      @include transition(background-color);
+   }
+}
+/*------------------------ Button ------------------------*/
+.btn {
+   font-size: 1rem;
+   font-family: $font-family;
+}
+.btn--big {
+   font-size: 1.2rem;
+}
+.btn--black {
+   color: $color-black;
+   background-color: rgba(255, 255, 255, 0);
+   border: 3px solid $color-black;
+   &:hover {
+      color: $color-white;
+      background-color: $color-black;
+      border: 3px solid $color-black;
+   }
+}
+.btn--white {
+   color: $color-white;
+   background-color: rgba(255, 255, 255, 0);
+   border: 2px solid $color-white;
+   &:hover {
+      color: $color-black;
+      background-color: $color-white;
+      border: 2px solid $color-white;
+   }
+   &:disabled {
+      color: $color-black;
+      background-color: $color-gray;
+      border: 2px solid $color-gray;
+   }
+}
+/*------------------------ Tooltip ------------------------*/
+.tooltip {
+   .tooltip__copy {
+      display: none;
+   }
+   &:disabled {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      .tooltip__copy {
+         display: block;
+         visibility: hidden;
+         width: 150%;
+         top: 150%;
+         left: 50%;
+         margin-left: -75%;
+         background-color: black;
+         color: #fff;
+         text-align: center;
+         border-radius: 6px;
+         padding: 5px 0;
+         position: absolute;
+         z-index: 1;
+      }
+      &:hover .tooltip__copy {
+         visibility: visible;
+      }
+   }
+}

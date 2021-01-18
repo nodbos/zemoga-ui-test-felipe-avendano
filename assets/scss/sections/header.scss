@@ -1,0 +1,117 @@
+/*----------------------- Header -----------------------*/
+@import "menu.scss";
+/*------------------------ Headline ------------------------*/
+.headlines {
+   margin-top: 4rem;
+   padding-bottom: 6rem;
+   @include mobile {
+      margin-top: 0;
+   }
+   .headline {
+      margin: 0 50% 0 0;
+      @include mobile {
+         margin: 0;
+      }
+      .headline__content {
+         padding: $base-space;
+
+         -webkit-backdrop-filter: $blur;
+         -moz-backdrop-filter: $blur;
+         -o-backdrop-filter: $blur;
+         -ms-backdrop-filter: $blur;
+         backdrop-filter: $blur;
+         @include mobile {
+            padding: $base-space/2;
+         }
+         .headline__title {
+            font-size: 4rem;
+            margin: 0 0 $base-space;
+            line-height: 3.5rem;
+            @include mobile {
+               margin: 0 0 $base-space/2;
+            }
+         }
+         .headline__copy {
+            font-weight: 400;
+            font-size: 1.2rem;
+         }
+         .headline__copy--small {
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 1rem 0 0;
+         }
+         .headline__more {
+            margin: 1rem 0 $base-space;
+            @include mobile {
+               margin: 1rem 0 $base-space/2;
+            }
+         }
+         .headline__link {
+            color: $color-white;
+            font-weight: 300;
+            text-decoration: none;
+            border-bottom: 1px solid $color-white;
+            &:hover {
+               border-bottom: none;
+            }
+         }
+      }
+      .headline__votes {
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+         overflow: hidden;
+         padding: 0;
+         cursor: pointer;
+         .headline__icon {
+            width: 50%;
+            height: 100%;
+            padding: 2rem;
+            font-size: 3rem;
+         }
+      }
+   }
+}
+/*------------------------ Timer ------------------------*/
+.timer {
+   display: flex;
+   align-items: center;
+   width: calc(100% + #{$margin-lateral} * 2);
+   margin-left: -1 * $margin-lateral;
+   background-color: rgba(12, 12, 12, 0.2);
+   .timer__copy {
+      width: 50%;
+      text-align: right;
+      padding-right: $base-space;
+      text-transform: uppercase;
+      @include mobile {
+         padding-right: $base-space/2;
+         font-size: 0.8rem;
+      }
+      p {
+         font-weight: 400;
+      }
+   }
+   .timer__number {
+      width: 100%;
+      padding-left: $base-space;
+      background-color: $color-gray;
+      border: 2px solid $color-gray;
+      opacity: 0.8;
+      color: $color-black;
+      font-size: 3rem;
+      font-weight: 300;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 65%, 1% 50%, 0 35%);
+      @include mobile {
+         padding-left: $base-space/2;
+         font-size: 2rem;
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 65%, 3% 50%, 0 35%);
+      }
+      p {
+         margin: 0.2rem 0;
+      }
+      b {
+         font-weight: 700;
+      }
+   }
+}

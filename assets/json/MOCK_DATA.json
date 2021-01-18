@@ -1,0 +1,46 @@
+[
+   {
+      "id": 0,
+      "content": {
+         "name": "Kanye West",
+         "time": "1 month",
+         "topic": "Entertainment",
+         "description": "Kanye West is a Grammy Award-winning rapper and record producer and fashion designer."
+      },
+      "img": "vote-kanye.png",
+      "dislike_percentage": 50
+   },
+   {
+      "id": 1,
+      "content": {
+         "name": "Mark Zuckerberg",
+         "time": "5 months",
+         "topic": "Business",
+         "description": "Co-founder and CEO of the social-networking website Facebook, as well as one of the world's youngest billionaires."
+      },
+      "img": "vote-mark.png",
+      "dislike_percentage": 50
+   },
+   {
+      "id": 2,
+      "content": {
+         "name": "Cristina Fernández de Kirchner",
+         "time": "12 months",
+         "topic": "Politics",
+         "description": "Ms Fernández took over the presidency in 2007, succeeding her late husband Nestor Kirchner."
+      },
+      "img": "vote-cristina.png",
+      "dislike_percentage": 50
+   },
+   {
+      "id": 3,
+      "content": {
+         "name": "Malala Yousafzai",
+         "time": "1 year",
+         "topic": "Entertainment",
+         "description": "She is a human rights activist who advocates for the rights of women and girls and worldwide access to education."
+      },
+      "img": "vote-malala.png",
+      "dislike_percentage": 50
+   }
+]
